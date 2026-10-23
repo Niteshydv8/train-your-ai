@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Training outputs (large / regenerable -- not for git)
+models/
+logs/
+videos/
+*.mp4
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

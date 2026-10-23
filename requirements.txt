@@ -1,0 +1,14 @@
+# --- rocket-lander-ai requirements (Python 3.10+) ---
+# Install with:  pip install -r requirements.txt
+#
+# NOTE on torch: stable-baselines3 needs PyTorch. For a CPU-only install
+# (recommended for this project -- training LunarLander does not need a GPU),
+# install torch from the CPU index FIRST, then install the rest:
+#     pip install torch --index-url https://download.pytorch.org/whl/cpu
+#     pip install -r requirements.txt
+
+gymnasium[box2d]>=0.29      # LunarLander-v3 environment (Box2D physics engine)
+stable-baselines3>=2.0       # PPO reinforcement-learning implementation
+torch                       # neural-network backend (prefer the CPU wheel, see note above)
+moviepy>=1.0                # video-saving backend used by Gymnasium's RecordVideo
+numpy>=1.22                 # numerical arrays
