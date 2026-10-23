@@ -8,6 +8,8 @@ Teach an AI to land a rocket on the moon. This project trains a **PPO**
 (Proximal Policy Optimization) agent to land the Lunar Lander using
 **Gymnasium** (Box2D physics) and **Stable-Baselines3**.
 
+![AI training loop](ai-architecture.webp)
+
 ## ▶️ Try it in your browser
 
 No setup needed — click the **Open in Colab** badge above, then in Colab:
@@ -101,6 +103,8 @@ python record.py     # saves landing clips to videos/
 ```
 
 ## Results
+
+![Training progression](training-progress.webp)
 
 | Run | Timesteps | ep_rew_mean (last 100) | Eval mean (10 eps) | Solved? |
 |-----|-----------|----------------------|--------------------|---------|
